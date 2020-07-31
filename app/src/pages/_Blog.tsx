@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { GithubBlogInfo, EncodingType } from '../types';
 import { getBlog } from '../api';
+const ReactMarkdown = require('react-markdown');
 
 export const Blog = () => {
     let { blogSha } = useParams<{ blogSha: string }>();
@@ -24,8 +25,7 @@ export const Blog = () => {
 
     return (
         <div>
-            <h1>Blogs</h1>
-            <div>{atob(blog.content.toString())}</div>
+            <ReactMarkdown source={atob(blog.content.toString())} />
         </div>
     )
 }
