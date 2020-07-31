@@ -5,16 +5,18 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import { Home } from './pages/Home';
-import { Blogs } from './pages/Blogs';
-import { Blog } from './pages/_Blog';
-import { Projects } from './pages/Projects';
+import { Navbar } from 'components/Navbar';
+import { Home } from 'pages/Home';
+import { Blogs } from 'pages/Blogs';
+import { Blog } from 'pages/_Blog';
+import { Projects } from 'pages/Projects';
 import './index.scss';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <Navbar />
       <Switch>
         <Route path="/projects">
           <Projects />
