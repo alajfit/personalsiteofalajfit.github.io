@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Blogs } from './pages/Blogs';
+import { Blog } from './pages/_Blog';
 import { Projects } from './pages/Projects';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
@@ -17,6 +18,9 @@ ReactDOM.render(
       <Switch>
         <Route path="/projects">
           <Projects />
+        </Route>
+        <Route path="/blogs/:blogSha">
+          <Blog />
         </Route>
         <Route path="/blogs">
           <Blogs />
