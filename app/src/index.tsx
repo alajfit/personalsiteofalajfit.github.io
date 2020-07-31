@@ -9,7 +9,7 @@ import { Home } from './pages/Home';
 import { Blogs } from './pages/Blogs';
 import { Blog } from './pages/_Blog';
 import { Projects } from './pages/Projects';
-import './index.css';
+import './index.scss';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
