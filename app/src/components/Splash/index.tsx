@@ -1,4 +1,5 @@
 import React from 'react';
+import { SocialBar } from 'components/SocialBar';
 import './index.scss';
 
 const MyName: React.FC = () => (
@@ -25,6 +26,7 @@ export const Splash: React.FC = () => {
             {aboutText.map((para, i) => (
                 <p className="Splash-about-p" key={i}>{para}</p>
             ))}
+            <SocialBar />
         </div>
     )
 }
