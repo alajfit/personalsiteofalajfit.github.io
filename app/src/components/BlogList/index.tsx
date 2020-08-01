@@ -7,7 +7,7 @@ const BlogListing: React.FC<IBlogListing> = ({ name, href, date, type, time, des
         <a href={href}>{name}</a>
         <div>
             <span>{date}</span>
-            <span>{time}</span>
+            <span>Reading Time: {time} mins</span>
         </div>
         <div>Category: {type}</div>
         <div>{desc}</div>
