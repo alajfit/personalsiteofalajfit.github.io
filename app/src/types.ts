@@ -26,3 +26,12 @@ export interface GithubBlogInfo {
     content: String;
     encoding: EncodingType.BASE64;
 }
+
+export interface IBlogListing {
+    name: string;
+    href: string;
+    date: string;
+    type: string;
+    time: string;
+    desc: string;
+}

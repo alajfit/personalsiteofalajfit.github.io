@@ -33,7 +33,7 @@ export const SocialBar: React.FC = () => {
     return (
         <ul className="SocialBar">
             {social.map(site=> (
-                <li>
+                <li key={site.href}>
                     <a href={site.href} target="_blank" rel="noopener noreferrer">
                         <i className={site.font} style={{ color: site.colr}}></i>
                     </a>

@@ -1,14 +1,6 @@
 import React from 'react';
+import { IBlogListing } from '../../types';
 import './index.scss';
-
-interface IBlogListing {
-    name: string;
-    href: string;
-    date: string;
-    type: string;
-    time: string;
-    desc: string;
-}
 
 const BlogListing: React.FC<IBlogListing> = ({ name, href, date, type, time, desc }) => (
     <li>
@@ -29,6 +21,7 @@ export const BlogList: React.FC<{ blogs: IBlogListing[] }> = ({ blogs }) => (
         <ul>
             {blogs.map(blog => (
                 <BlogListing
+                    key={blog.name}
                     name={blog.name}
                     href={blog.href}
                     date={blog.date}
