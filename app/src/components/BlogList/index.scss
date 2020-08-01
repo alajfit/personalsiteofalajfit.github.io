@@ -16,6 +16,7 @@
 
 .BlogListing {
     position: relative;
+    margin-bottom: 30px;
 
     * {
         margin-bottom: 4px;
@@ -27,6 +28,11 @@
         font-weight: 700;
         text-decoration: none;
         text-transform: capitalize;
+        color: #1DA1F2;
+
+        &:visited, &:active {
+            color: #1DA1F2;
+        }
     }
 
     .BlogListing-time {

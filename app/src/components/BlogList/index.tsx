@@ -6,7 +6,7 @@ const BlogListing: React.FC<IBlogListing> = ({ name, href, date, type, time, des
     <li className="BlogListing">
         <a className="BlogListing-title" href={href}>{name.split('-').join(' ')}</a>
         <div className="BlogListing-time">
-            <span>{date}</span>
+            <span>{date.split('-').join('/')}</span>
             <span>Reading Time: {time} mins</span>
         </div>
         <div>Category: {type}</div>
