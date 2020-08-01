@@ -1,5 +1,6 @@
 import React from 'react';
 import { IBlogListing } from '../../types';
+import { SocialBar } from 'components/SocialBar';
 import './index.scss';
 
 const BlogListing: React.FC<IBlogListing> = ({ name, href, date, type, time, desc }) => (
@@ -10,7 +11,7 @@ const BlogListing: React.FC<IBlogListing> = ({ name, href, date, type, time, des
             <span>Reading Time: {time} mins</span>
         </div>
         <div>Category: {type}</div>
-        <div>{desc.split('-').join(' ')}</div>
+        <div className="BlogListing-desc">{desc.split('-').join(' ')}</div>
     </li>
 )
 
@@ -18,7 +19,7 @@ export const BlogList: React.FC<{ blogs: IBlogListing[] }> = ({ blogs }) => (
     <div className="BlogList">
         <h1 className="BlogList-title">Personal Blog of Alan J. Fitzpatrick</h1>
         <ul className="BlogList-listings">
-            {blogs.map(blog => (
+            {blogs.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).map(blog => (
                 <BlogListing
                     key={blog.name}
                     name={blog.name}
@@ -29,5 +30,6 @@ export const BlogList: React.FC<{ blogs: IBlogListing[] }> = ({ blogs }) => (
                     desc={blog.desc} />
             ))}
         </ul>
+        <SocialBar />
     </div>
 )

@@ -12,6 +12,10 @@
     .Splash-about-p {
         line-height: 22px;
         margin-bottom: 16px;
+
+        &:last-of-type {
+            margin-bottom: 30px;
+        }
     }
 }
 
