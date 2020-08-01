@@ -1,3 +1,38 @@
 .BlogList {
     position: relative;
+    width: 566px;
+    margin: 0 auto;
+
+    .BlogList-title {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .BlogList-listings {
+        padding: 0;
+        list-style: none;
+    }
+}
+
+.BlogListing {
+    position: relative;
+
+    * {
+        margin-bottom: 4px;
+    }
+
+    a.BlogListing-title {
+        display: block;
+        font-size: 30px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    .BlogListing-time {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-transform: capitalize;
+    }
 }

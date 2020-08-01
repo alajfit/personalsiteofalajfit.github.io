@@ -3,22 +3,21 @@ import { IBlogListing } from '../../types';
 import './index.scss';
 
 const BlogListing: React.FC<IBlogListing> = ({ name, href, date, type, time, desc }) => (
-    <li>
-        <a href={href}>{name}</a>
-        <div>
+    <li className="BlogListing">
+        <a className="BlogListing-title" href={href}>{name.split('-').join(' ')}</a>
+        <div className="BlogListing-time">
             <span>{date}</span>
             <span>Reading Time: {time} mins</span>
         </div>
         <div>Category: {type}</div>
-        <div>{desc}</div>
+        <div>{desc.split('-').join(' ')}</div>
     </li>
 )
 
 export const BlogList: React.FC<{ blogs: IBlogListing[] }> = ({ blogs }) => (
-    <div>
-        <h1>Blogs</h1>
-        <h2>Personal Blog of Alan J. Fitzpatrick</h2>
-        <ul>
+    <div className="BlogList">
+        <h1 className="BlogList-title">Personal Blog of Alan J. Fitzpatrick</h1>
+        <ul className="BlogList-listings">
             {blogs.map(blog => (
                 <BlogListing
                     key={blog.name}
