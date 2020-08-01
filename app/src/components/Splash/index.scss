@@ -1,3 +1,34 @@
+@import 'styles/mixins.scss';
+
 .Splash {
     position: relative;
+    width: 566px;
+    margin: 0 auto;
+
+    @include bp (md) {
+        margin-bottom: auto;
+    }
+
+    .Splash-about-p {
+        line-height: 22px;
+        margin-bottom: 16px;
+    }
+}
+
+.MyName {
+    font-weight: lighter;
+    font-size: 55px;
+    margin: 0 0 inherit 0;
+    text-align: center;
+}
+
+.Tagline {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+
+    .far.fa-heart {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
 }
