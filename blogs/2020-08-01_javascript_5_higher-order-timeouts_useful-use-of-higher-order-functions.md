@@ -2,6 +2,8 @@
 
 > Useful Use Of Higher Order Functions
 
+![Higher Order Functions](https://raw.githubusercontent.com/alajfit/site.personal/master/images/higher-order-functions.png)
+
 ## The Method
 ```js
 function startTimer () {
