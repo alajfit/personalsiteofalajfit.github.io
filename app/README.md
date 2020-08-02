@@ -1,9 +1,9 @@
 # Personal Site App
 
-#£ Scripts
+## Scripts
 
 ```bash 
-npm start
+> npm start
 ```
 
 ```bash
