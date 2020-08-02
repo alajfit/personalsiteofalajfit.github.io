@@ -1,9 +1,20 @@
 # Personal Site App
 
-# Scripts
+#£ Scripts
 
-### `npm start`
+```bash 
+npm start
+```
 
-### `npm test`
+```bash
+> npm test
+```
 
-### `npm run build`
+```bash
+> npm run build
+```
+
+## Resources
+
+- [CRA Docs](https://create-react-app.dev/docs/documentation-intro)
+- [React Markdown](https://www.newline.co/@dmitryrogozhny/how-to-render-markdown-in-react-with-react-markdown--5d1c3849)
