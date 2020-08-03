@@ -1,6 +1,7 @@
 import React from 'react';
 import { IBlogListing } from '../../types';
 import { SocialBar } from 'components/SocialBar';
+import { Spacer } from 'components/Spacer';
 import './index.scss';
 
 const BlogListing: React.FC<IBlogListing> = ({ name, href, date, type, time, desc }) => (
@@ -30,6 +31,7 @@ export const BlogList: React.FC<{ blogs: IBlogListing[] }> = ({ blogs }) => (
                     desc={blog.desc} />
             ))}
         </ul>
+        <Spacer />
         <SocialBar />
     </div>
 )

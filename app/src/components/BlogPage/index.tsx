@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { SocialBar } from 'components/SocialBar';
+import { Spacer } from 'components/Spacer';
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
 import 'highlight.js/styles/dracula.css';
@@ -33,7 +34,7 @@ export const BlogPage: React.FC<{ source: string }> = ({ source }) => {
     return (
         <div className="BlogPage">
             <ReactMarkdown source={atob(source)} renderers={renderers} />
-            <div className="spacer"></div>
+            <Spacer />
             <SocialBar />
         </div>
     )

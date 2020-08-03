@@ -1,1 +1,2 @@
-# React Native News
+# Compact News
+> News Aggregation App
