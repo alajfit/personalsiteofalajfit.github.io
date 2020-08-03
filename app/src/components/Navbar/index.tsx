@@ -39,6 +39,11 @@ const DesktopNavbar = () => (
                 Projects
             </Link>
         </li>
+        <li className="DesktopNavbar-item">
+            <Link to="/contact">
+                Contact
+            </Link>
+        </li>
     </ul>
 )
 
