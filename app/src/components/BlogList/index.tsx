@@ -18,8 +18,8 @@ const BlogListing: React.FC<IBlogListing> = ({ name, href, date, type, time, des
 
 export const BlogList: React.FC<{ blogs: IBlogListing[] }> = ({ blogs }) => (
     <div className="BlogList">
-        <div>
-            <img src="" alt="me" />
+        <div className="BlogList-heading">
+            <div className="BlogList-img"></div>
             <h1 className="BlogList-title">Personal Blog of Alan J. Fitzpatrick</h1>
         </div>
         <ul className="BlogList-listings">
