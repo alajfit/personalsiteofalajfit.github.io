@@ -18,7 +18,10 @@ const BlogListing: React.FC<IBlogListing> = ({ name, href, date, type, time, des
 
 export const BlogList: React.FC<{ blogs: IBlogListing[] }> = ({ blogs }) => (
     <div className="BlogList">
-        <h1 className="BlogList-title">Personal Blog of Alan J. Fitzpatrick</h1>
+        <div>
+            <img src="" alt="me" />
+            <h1 className="BlogList-title">Personal Blog of Alan J. Fitzpatrick</h1>
+        </div>
         <ul className="BlogList-listings">
             {blogs.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).map(blog => (
                 <BlogListing
