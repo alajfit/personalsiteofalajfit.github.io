@@ -1,0 +1,17 @@
+.ContactForm {
+    position: relative;
+    width: 566px;
+    margin: 0 auto;
+
+    .Form {
+        display: flex;
+        flex-direction: row;
+
+        .Form-person {
+            flex: 0 0 50%;
+        }
+        .Form-message {
+            flex: 0 0 50%;
+        }
+    }
+}

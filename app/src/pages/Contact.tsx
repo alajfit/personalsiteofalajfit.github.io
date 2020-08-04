@@ -1,3 +1,8 @@
 import React from 'react';
+import { ContactForm } from 'components/ContactForm';
 
-export const Contact: React.FC = () => <div>Contact Me</div>
+export const Contact: React.FC = () => (
+    <div>
+        <ContactForm />
+    </div>
+)
