@@ -1,16 +1,27 @@
+@import 'styles/variables.scss';
+
 .ContactForm {
     position: relative;
     width: 566px;
     margin: 0 auto;
 
+    .ContactTitle {
+        font-weight: lighter;
+        font-size: 55px;
+        text-align: center;
+    }
+
     .Form {
         display: flex;
         flex-direction: row;
+        border-radius: 10px;
 
         .Form-person {
+            background-color: $color-primary;
             flex: 0 0 50%;
         }
         .Form-message {
+            background-color: $color-secondary;
             flex: 0 0 50%;
         }
     }

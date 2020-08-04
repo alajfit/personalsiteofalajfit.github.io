@@ -1,4 +1,6 @@
 import React from 'react';
+import { SocialBar } from 'components/SocialBar';
+import { Spacer } from 'components/Spacer';
 import './index.scss';
 
 const ContactTitle: React.FC = () => (
@@ -9,17 +11,14 @@ const Form: React.FC = () => (
     <form className="Form">
         <div className="Form-person">
             <div>
-                <label htmlFor="">Name</label>
-                <input type="text"/>
+                <input type="text" />
             </div>
             <div>
-                <label htmlFor="">Email</label>
-                <input type="text"/>
+                <input type="text" />
             </div>
         </div>
         <div className="Form-message">
             <div>
-                <label htmlFor="">Message</label>
                 <textarea name="" id="" cols={30} rows={10}></textarea>
             </div>
             <div>
@@ -33,5 +32,7 @@ export const ContactForm: React.FC = () => (
     <div className="ContactForm">
         <ContactTitle />
         <Form />
+        <Spacer />
+        <SocialBar />
     </div>
 )
