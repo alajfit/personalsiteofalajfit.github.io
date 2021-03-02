@@ -3,16 +3,18 @@
 ## Scripts
 
 ```bash 
-> npm start
+$ npm start
+$ npm test
+$ npm run build
 ```
 
-```bash
-> npm test
-```
+## Docker Commands
 
 ```bash
-> npm run build
+$ docker build . -t alajfit/site:personal-site
+$ docker run -p 8080:80 alajfit/site:personal-site
 ```
+
 
 ## Resources
 
