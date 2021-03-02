@@ -23,3 +23,18 @@ $ docker run -p 8080:80 alajfit/site:personal-site
 - [React Markdown Usage](https://www.newline.co/@dmitryrogozhny/how-to-render-markdown-in-react-with-react-markdown--5d1c3849)
 - [Highlight JS](https://github.com/highlightjs/highlight.js)
 - [Highlight JS Styles](https://highlightjs.org/static/demo/)
+
+## Useful Info
+
+> Kill Apps Running on Port in windows (replace port and pid)
+```sh
+$ netstat -ano | findstr :<PORT>
+$ taskkill /PID <PID> /F
+```
+
+> Stop and remove all containers and images
+```sh
+docker container stop $(docker container list -q)
+docker rm $(docker ps -a -q)
+docker rmi $(docker images -q)
+```
