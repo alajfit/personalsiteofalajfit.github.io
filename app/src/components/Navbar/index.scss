@@ -21,7 +21,7 @@
 
     .DesktopNavbar {
         display: flex;
-        width: 566px;
+        width: fit-content;
         flex-direction: row;
         list-style: none;
         padding: 0;
@@ -33,7 +33,7 @@
         }
 
         .DesktopNavbar-item {
-            flex: 0 0 141.5px;
+            padding: 0 40px;
             align-items: center;
             text-align: center;
             margin-bottom: 0;
