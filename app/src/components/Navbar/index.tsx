@@ -25,6 +25,11 @@ const MobileNavbar = () => (
             </Link>
         </li>
         <li className="MobileNavbar-item">
+            <Link to="/code">
+                <i className="fas fa-code" style={{ color: '#1787fb' }} />
+            </Link>
+        </li>
+        <li className="MobileNavbar-item">
             <Link to="/requestcv">
                 <i className="far fa-address-book" style={{ color: '#1787fb' }} />
             </Link>
@@ -52,6 +57,11 @@ const DesktopNavbar = () => (
         <li className="DesktopNavbar-item">
             <Link to="/books">
                 Books
+            </Link>
+        </li>
+        <li className="DesktopNavbar-item">
+            <Link to="/code">
+                Code
             </Link>
         </li>
         <li className="DesktopNavbar-item">

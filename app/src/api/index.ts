@@ -16,3 +16,8 @@ export const getProjects = () =>
     fetch('https://api.github.com/repos/alajfit/site.personal/git/trees/master?recursive=1')
         .then(res => res.json())
         .then((data: GithubTree)  => data.tree.filter(file => file.path.startsWith('projects/')))
+
+export const getCode = () =>
+    fetch('https://api.github.com/repos/alajfit/site.personal/git/trees/master?recursive=1')
+        .then(res => res.json())
+        .then((data: GithubTree)  => data.tree.filter(file => file.path.startsWith('algos/')))
