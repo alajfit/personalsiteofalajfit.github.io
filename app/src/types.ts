@@ -27,6 +27,15 @@ export interface GithubBlogInfo {
     encoding: EncodingType.BASE64;
 }
 
+export interface GithubAlgoInfo {
+    sha: String;
+    node_id: String;
+    size: Number;
+    url: String;
+    content: String;
+    encoding: EncodingType.BASE64;
+}
+
 export interface IBlogListing {
     name: string;
     href: string;
