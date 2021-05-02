@@ -35,3 +35,13 @@ export interface IBlogListing {
     time: string;
     desc: string;
 }
+
+export interface ICodeListing {
+    name: string;
+    href: string;
+    date: string;
+    type: string;
+    time: string;
+    desc: string;
+}
+
